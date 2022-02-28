@@ -109,6 +109,7 @@ def update_bar_chart(gene):
                  color="Compared pair", barmode="group")
     return fig
 
-app.run_server(mode='external', host = '127.0.0.1')
+if __name__ == '__main__':
+    app.server.run(debug=True, threaded=True)
 
 
